@@ -1,3 +1,5 @@
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/511d1534-6b1b-4e10-87dc-b86c248541e3" />
+
 # 📋 QuickClip
 
 **Universal Clipboard History Manager**
@@ -134,6 +136,7 @@ QuickClip features a modern dark theme:
 ║  [📋 Copy Selected]  [📌 Pin/Unpin]  [🗑️ Delete]             ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/63cce943-011e-4de1-85e1-6d3e71731884" />
 
 ---
 
@@ -171,4 +174,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 *Made with ❤️ by Team Brain*
+
 
