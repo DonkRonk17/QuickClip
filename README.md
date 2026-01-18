@@ -158,18 +158,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 👤 Author
+## 🙏 Credits
 
-**Metaphy LLC / Team Brain**
+Created by **Randell Logan Smith and Team Brain** at [Metaphy LLC](https://metaphysicsandcomputing.com)
 
-- GitHub: [@DonkRonk17](https://github.com/DonkRonk17)
-
----
-
-## 🙏 Acknowledgments
-
-- Built with [PySide6](https://doc.qt.io/qtforpython/) (Qt for Python)
-- Created by Team Brain's Holy Grail Workflow
+Part of the HMSS (Heavenly Morning Star System) ecosystem.
 
 ---
 
