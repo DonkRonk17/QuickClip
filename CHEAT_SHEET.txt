@@ -1,0 +1,157 @@
+================================================================================
+                              QUICKCLIP CHEAT SHEET
+================================================================================
+
+QUICK START
+-----------
+1. Install:  pip install PySide6 && python quickclip.py
+2. Run:      python quickclip.py
+3. Minimize: Close window or press Escape (runs in system tray)
+4. Open:     Double-click tray icon
+
+================================================================================
+COMMON ACTIONS
+--------------------------------------------------------------------------------
+
+Capture Clip:
+  - Automatic! Copy anything and QuickClip saves it.
+
+Copy from History:
+  - Double-click an item in the list.
+  - Or: Select item + press Enter.
+  - Or: Select item + click "Copy Selected" button.
+
+Preview Clip:
+  - Single-click an item to see full content in preview pane.
+
+Pin/Unpin Item:
+  - Select item + click "Pin/Unpin" button.
+  - Pinned items: Stay at top, protected from clear/trim.
+
+Delete Item:
+  - Select item + click "Delete" button.
+  - Or: Select item + press Delete key.
+
+Search History:
+  - Type in the search bar at the top.
+  - Filters list in real-time.
+  - Clear search to see all items.
+
+Clear All Unpinned:
+  - Click "Clear All" button.
+  - Confirmation required.
+  - Pinned items are NOT deleted.
+
+================================================================================
+KEYBOARD SHORTCUTS
+--------------------------------------------------------------------------------
+
+Escape         Minimize to system tray
+Ctrl+F         Focus search bar
+Enter          Copy selected item
+Delete         Delete selected item
+
+================================================================================
+SYSTEM TRAY
+--------------------------------------------------------------------------------
+
+Double-Click:  Show QuickClip window
+Right-Click:   Context menu
+  - Show QuickClip
+  - Quit
+
+================================================================================
+DATA & CONFIGURATION
+--------------------------------------------------------------------------------
+
+History File:
+  - Windows: C:\Users\<you>\.quickclip_history.json
+  - Mac:     /Users/<you>/.quickclip_history.json
+  - Linux:   /home/<you>/.quickclip_history.json
+
+Configuration (edit quickclip.py):
+  - MAX_HISTORY:   Max clips to store (default: 100)
+  - SAVE_FILE:     History file path
+
+JSON Format:
+  [
+    {
+      "text": "Clipboard content",
+      "timestamp": "2026-01-15T10:30:00.123456",
+      "pinned": false
+    }
+  ]
+
+================================================================================
+PROGRAMMATIC ACCESS
+--------------------------------------------------------------------------------
+
+Python:
+  import json
+  from pathlib import Path
+  
+  history_file = Path.home() / ".quickclip_history.json"
+  with open(history_file) as f:
+      clips = json.load(f)
+  
+  for clip in clips[:5]:
+      print(clip['text'][:50])
+
+Bash:
+  cat ~/.quickclip_history.json | python3 -c "
+  import json, sys
+  clips = json.load(sys.stdin)[:5]
+  for c in clips:
+      print(c['text'][:60])
+  "
+
+================================================================================
+TROUBLESHOOTING
+--------------------------------------------------------------------------------
+
+Issue: QuickClip not starting
+  -> Check: pip install PySide6
+  -> Check: Python 3.8+ installed
+
+Issue: Clipboard not being captured
+  -> Restart QuickClip
+  -> Check for conflicting clipboard managers
+
+Issue: History not saving
+  -> Check permissions on home directory
+  -> Look for error messages in console
+
+Issue: Tray icon not visible
+  -> Check system tray settings (show hidden icons)
+  -> On Linux: May need system tray extension
+
+================================================================================
+QUICKCLIP VS CLIPSTASH
+--------------------------------------------------------------------------------
+
+Both are clipboard managers by Team Brain:
+
+QuickClip:
+  - 100 item history (lighter)
+  - Home directory storage (~/.quickclip_history.json)
+  - Same core features
+
+ClipStash:
+  - 500 item history (more storage)
+  - App data storage (~/.clipstash/history.json)
+  - Hash-based deduplication
+
+Choose based on your storage preference!
+
+================================================================================
+LINKS
+--------------------------------------------------------------------------------
+
+GitHub:          https://github.com/DonkRonk17/QuickClip
+Documentation:   README.md
+Examples:        EXAMPLES.md
+Integration:     INTEGRATION_PLAN.md
+
+================================================================================
+Questions? Check the docs or open a GitHub Issue!
+================================================================================
