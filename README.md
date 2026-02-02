@@ -1,3 +1,5 @@
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b4b8e8f6-afc0-4faa-a761-d17c615e6d65" />
+
 # QuickClip
 
 **Universal Clipboard History Manager**
@@ -684,6 +686,9 @@ python -m pytest test_quickclip.py::TestClipboardItemBasic::test_init_basic -v
 
 ---
 
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/a29a04d1-3d3e-4b3b-8e78-d9cfc84a6976" />
+
+
 ## Contributing
 
 Contributions are welcome! Please follow these guidelines:
@@ -818,5 +823,6 @@ Healthcare AI Professional & Developer
 *Part of the Team Brain Tool Ecosystem*
 
 *One World. One Family. One Love.*
+
 
 </div>
